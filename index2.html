@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title> Js task 2
+</title>
+<body>
+	</body>
+	<script type="text/javascript">
+	 
+       //declaring the objects array and variables;
+
+	  let obj1 = {principal: 2500, time: 1.8}
+	   let obj2 = {principal: 1000, time: 5}
+	    let obj3 = {principal: 3000, time: 1}
+	     let obj4 = {principal: 2000, time: 3}
+	     let data=[obj1, obj2, obj3, obj4]
+	     var rate;
+	     var interest;
+	     //declare a function
+	        function interestCalculator(Array)
+	      {
+	      	//using for loop to iterate each element of the array
+	     for(i=0; i<Array.length; i++){
+	     	// conditions for each principal value
+	     if (Array[i].principal >=2500 && Array[i].time>1&& Array[i].time<3){
+	     	 rate=3
+	     }
+	     	else if(Array[i].principal >=2500 && Array[i].time>=3){
+	     		 rate=4
+	     }
+	     else if(Array[i].principal <2500 || Array[i].time<=1){
+	     		 rate=2
+	     	}
+	     	else (rate=1)
+                  interest=(Array[i].principal*rate*Array[i].time)/100
+	     		Object.assign(Array[i], {rate: rate, interest: interest});
+
+	     }
+	     interestData= Array;
+	      console.log(interestData);
+	     return true
+	    
+	 }
+	 // calling the function
+	 interestCalculator(data);
+	 
+	 
+</script>
+</html>
