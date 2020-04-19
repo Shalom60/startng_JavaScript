@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<title> Startng Js task 3
+</title>
+<body>
+	</body>
+	<script type="text/javascript">
+
+	     //declare the function
+	        function integer(x) {
+
+	        	//initiate variable/array
+	        	var	Array=[];
+              var string;
+   
+   	      	//using for loop to check elements from 1 to inputed integer value
+	     for(y=1; y<=x; y++){
+
+	     	// conditions for element
+	     if (y%2 == 0){
+	     	 string = "yu";
+	     }
+	     	if (y%3 == 0){
+	     	string = "gi";
+	     }
+	      if (y%5 == 0){
+	     	 string= "oh";
+	     	}
+	  	      if (y%2 == 0 && y%3 == 0 && y%5 != 0){
+	     	string= "yu-gi";
+	     	}
+	     	 if (y%2 == 0 && y%3!= 0 && y%5 == 0){
+	     	 string= "yu-oh";
+	     	}
+	     	  if (y%2!= 0 && y%3 == 0 && y%5 == 0){
+	     	 string = "gi-oh";
+	     	}
+	     	 if (y%2 == 0 && y%3 == 0 && y%5 == 0){
+	     	 string = "yu-gi-oh";
+	     	}
+	     	 if (y%2 != 0 && y%3 != 0 && y%5 != 0){
+	     	 string = y;
+	     	};
+ Array.push(string);
+	     }
+	     
+	     console.log(Array);
+	     return true
+	    
+	 }
+	 // calling the function
+	 integer(100);
+	  integer(65);
+	 
+</script>
+</html>
